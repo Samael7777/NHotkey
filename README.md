@@ -1,6 +1,8 @@
 NHotkey
 =======
 
+Forked from https://github.com/thomaslevesque/NHotkey
+
 [![NuGet version](https://img.shields.io/nuget/v/NHotkey.svg?logo=nuget&label=NHotkey)](https://www.nuget.org/packages/NHotkey)
 [![NuGet version](https://img.shields.io/nuget/v/NHotkey.Wpf.svg?logo=nuget&label=NHotkey.Wpf)](https://www.nuget.org/packages/NHotkey.Wpf)
 [![NuGet version](https://img.shields.io/nuget/v/NHotkey.WindowsForms.svg?logo=nuget&label=NHotkey.WindowsForms)](https://www.nuget.org/packages/NHotkey.WindowsForms)
