@@ -2,8 +2,12 @@
   <PropertyGroup>
     <TargetFrameworks>$(LibraryTargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
+	
+	<PropertyGroup>
+		<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0-windows'))">true</IsAotCompatible>
+	</PropertyGroup>
 
-  <PropertyGroup Label="Package properties">
+	<PropertyGroup Label="Package properties">
     <Description>A managed library to handle global hotkeys in Windows Forms and WPF applications. NOTE: this package doesn't contain a concrete HotkeyManager implementation; you should add either the NHotkey.Wpf or NHotkey.WindowsForms package to get one.</Description>
   </PropertyGroup>
 

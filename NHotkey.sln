@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NHotkey.WindowsForms.Demo", "samples\NHotkey.WindowsForms.Demo\NHotkey.WindowsForms.Demo.csproj", "{30950D62-696C-4C1C-A6F1-93FB7B355E71}"
 EndProject
@@ -36,6 +36,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{90C6005F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "build", "tools\build\build.csproj", "{1588EBC2-C947-4086-920A-CF0615E22410}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHotkey.Avalonia", "src\NHotkey.Avalonia\NHotkey.Avalonia.csproj", "{8F3473DF-8499-486A-B92F-7F6AAD01ADD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHotkey.Avalonia.Demo", "samples\NHotkey.Avalonia.Demo\NHotkey.Avalonia.Demo.csproj", "{334D8883-BA7C-4DCA-80AC-DBC427F6E8D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +68,14 @@ Global
 		{338F60F0-F9FE-42AB-9EAE-31E9C3E3CEC3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1588EBC2-C947-4086-920A-CF0615E22410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1588EBC2-C947-4086-920A-CF0615E22410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3473DF-8499-486A-B92F-7F6AAD01ADD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3473DF-8499-486A-B92F-7F6AAD01ADD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3473DF-8499-486A-B92F-7F6AAD01ADD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3473DF-8499-486A-B92F-7F6AAD01ADD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334D8883-BA7C-4DCA-80AC-DBC427F6E8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334D8883-BA7C-4DCA-80AC-DBC427F6E8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334D8883-BA7C-4DCA-80AC-DBC427F6E8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334D8883-BA7C-4DCA-80AC-DBC427F6E8D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +87,8 @@ Global
 		{1A22762D-A928-431C-B916-F5ED6DA94C11} = {FBA6085F-DD7E-4E18-9BC8-8F709157EC33}
 		{338F60F0-F9FE-42AB-9EAE-31E9C3E3CEC3} = {CEE3E414-E343-43C9-8CB9-72CA02FD0299}
 		{1588EBC2-C947-4086-920A-CF0615E22410} = {90C6005F-8801-41EF-AE11-9B0C6483025E}
+		{8F3473DF-8499-486A-B92F-7F6AAD01ADD4} = {FBA6085F-DD7E-4E18-9BC8-8F709157EC33}
+		{334D8883-BA7C-4DCA-80AC-DBC427F6E8D2} = {CEE3E414-E343-43C9-8CB9-72CA02FD0299}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CACB69F6-E9A2-4B9C-84DC-6A91978A571B}
