@@ -3,16 +3,19 @@ NHotkey
 
 Forked from https://github.com/thomaslevesque/NHotkey
 
+Add Avalonia framework support.
+
 [![NuGet version](https://img.shields.io/nuget/v/NHotkey.svg?logo=nuget&label=NHotkey)](https://www.nuget.org/packages/NHotkey)
 [![NuGet version](https://img.shields.io/nuget/v/NHotkey.Wpf.svg?logo=nuget&label=NHotkey.Wpf)](https://www.nuget.org/packages/NHotkey.Wpf)
 [![NuGet version](https://img.shields.io/nuget/v/NHotkey.WindowsForms.svg?logo=nuget&label=NHotkey.WindowsForms)](https://www.nuget.org/packages/NHotkey.WindowsForms)
-[![AppVeyor build](https://img.shields.io/appveyor/ci/thomaslevesque/nhotkey.svg?logo=appveyor&logoColor=cccccc)](https://ci.appveyor.com/project/thomaslevesque/nhotkey)
+[![NuGet version](https://img.shields.io/nuget/v/NHotkey.Avalonia.svg?logo=nuget&label=NHotkey.Avalonia)](https://www.nuget.org/packages/NHotkey.Avalonia)
 
 Easily handle shortcut keys even when your WPF or WinForms app doesn't have focus. Declare hotkeys in XAML with the familiar `KeyBinding` syntax.
 
 Nuget packages:
 - for WPF: [NHotkey.Wpf](http://www.nuget.org/packages/NHotkey.Wpf/)
 - for Windows Forms: [NHotkey.WindowsForms](http://www.nuget.org/packages/NHotkey.WindowsForms/)
+- for Avalonia : [NHotkey.Avalonia](http://www.nuget.org/packages/NHotkey.Avalonia/)
 
 ### Windows Forms usage
 
@@ -119,3 +122,27 @@ still be registered
 - changing the keys or modifiers of a `KeyBinding` at runtime is currently not supported. If
 you need to modify a `KeyBinding` at runtime, you need to set `HotkeyManager.RegisterGlobalHotkey`
 to false, change the key, and set `HotkeyManager.RegisterGlobalHotkey` to true again.
+
+### Avalonia usage
+
+In-code usage and limitations are similar to WPF.
+
+Namespace :
+```csharp
+    using NHotkey.Avalonia;
+```
+
+AXAML syntax:
+```xml
+    <Window 
+    xmlns:avalonia="clr-namespace:NHotkey.Avalonia;assembly=NHotkey.Avalonia"
+    ... >
+    ...
+    <Window.KeyBindings>
+        <KeyBinding Gesture="Ctrl+Alt+N" Command="{Binding NegateCommand}"
+                    avalonia:GlobalKeyBinding.RegisterGlobalHotkey="True" />
+        <KeyBinding Gesture="Ctrl+Alt+T" Command="{Binding TestCommand}"
+                    avalonia:GlobalKeyBinding.RegisterGlobalHotkey="True" />
+    </Window.KeyBindings>
+    ...
+```
