@@ -12,9 +12,19 @@
 
 	<PropertyGroup Label="Package properties">
 		<PackageId>$(PackagePrefix).$(AssemblyName)</PackageId>
-		<Description>A managed library to handle global hotkeys in Avalonia applications. This package contains the concrete HotkeyManager implementation for Avalonia Framwork.</Description>
+		<Description>A managed library to handle global hotkeys in Avalonia applications. This package contains the concrete HotkeyManager implementation for Avalonia Framework.</Description>
 		<Authors>Thomas Levesque, Vadim Kutin</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Copyright>Thomas Levesque, Vadim Kutin</Copyright>
+		<PackageProjectUrl>https://github.com/Samael7777/NHotkey</PackageProjectUrl>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="Avalonia.Win32" Version="11.2.5" />
 	  <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.183">

@@ -6,7 +6,16 @@
   <PropertyGroup Label="Package properties">
 	  <PackageId>$(PackagePrefix).$(AssemblyName)</PackageId>
 	  <Description>A managed library to handle global hotkeys in WPF applications. This package contains the concrete HotkeyManager implementation for WPF.</Description>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/Samael7777/NHotkey</RepositoryUrl>
+	  <Copyright>Thomas Levesque</Copyright>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NHotkey\NHotkey.csproj" />
   </ItemGroup>

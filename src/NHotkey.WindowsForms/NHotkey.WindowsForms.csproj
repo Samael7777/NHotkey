@@ -6,7 +6,16 @@
   <PropertyGroup Label="Package properties">
 	  <PackageId>$(PackagePrefix).$(AssemblyName)</PackageId>
 	  <Description>A managed library to handle global hotkeys in Windows Forms applications. This package contains the concrete HotkeyManager implementation for Windows Forms.</Description>
+	  <Copyright>Thomas Levesque</Copyright>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/Samael7777/NHotkey</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NHotkey\NHotkey.csproj" />
   </ItemGroup>
