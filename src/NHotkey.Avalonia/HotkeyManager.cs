@@ -75,6 +75,14 @@ public class HotkeyManager : HotkeyManagerBase
         });
     }
 
+    public new void Remove(string name)
+    {
+        _window.Invoke(() =>
+        {
+            base.Remove(name);
+        });
+    }
+
     private static HotkeyFlags GetFlags(KeyModifiers modifiers, bool noRepeat)
     {
         var flags = HotkeyFlags.None;
