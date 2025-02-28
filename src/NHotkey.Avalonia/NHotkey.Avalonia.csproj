@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows;net8.0-windows</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0-windows'))">true</IsAotCompatible>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Package properties">
+		<Description>A managed library to handle global hotkeys in Avalonia applications. This package contains the concrete HotkeyManager implementation for Avalonia Framwork.</Description>
+		<Authors>Thomas Levesque, Vadim Kutin</Authors>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Avalonia.Win32" Version="11.2.5" />
+	  <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.183">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="PhoenixTools.Window" Version="1.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\NHotkey\NHotkey.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.0.0" />
+	  <PackageReference Update="MinVer" Version="2.3.0" />
+	</ItemGroup>
+</Project>
