@@ -13,9 +13,9 @@ Add Avalonia framework support.
 Easily handle shortcut keys even when your WPF or WinForms app doesn't have focus. Declare hotkeys in XAML with the familiar `KeyBinding` syntax.
 
 Nuget packages:
-- for WPF: [NHotkey.Wpf](http://www.nuget.org/packages/NHotkey.Wpf/)
-- for Windows Forms: [NHotkey.WindowsForms](http://www.nuget.org/packages/NHotkey.WindowsForms/)
-- for Avalonia : [NHotkey.Avalonia](http://www.nuget.org/packages/NHotkey.Avalonia/)
+- for WPF: [PhoenixTools.NHotkey.Wpf](http://www.nuget.org/packages/PhoenixTools.NHotkey.Wpf/)
+- for Windows Forms: [PhoenixTools.NHotkey.WindowsForms](http://www.nuget.org/packages/PhoenixTools.NHotkey.WindowsForms/)
+- for Avalonia : [PhoenixTools.NHotkey.Avalonia](http://www.nuget.org/packages/PhoenixTools.NHotkey.Avalonia/)
 
 ### Windows Forms usage
 
