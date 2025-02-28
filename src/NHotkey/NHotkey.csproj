@@ -8,7 +8,8 @@
 	</PropertyGroup>
 
 	<PropertyGroup Label="Package properties">
-    <Description>A managed library to handle global hotkeys in Windows Forms and WPF applications. NOTE: this package doesn't contain a concrete HotkeyManager implementation; you should add either the NHotkey.Wpf or NHotkey.WindowsForms package to get one.</Description>
+		<Description>A managed library to handle global hotkeys in Windows Forms and WPF applications. NOTE: this package doesn't contain a concrete HotkeyManager implementation; you should add either the NHotkey.Wpf or NHotkey.WindowsForms package to get one.</Description>
+		<PackageId>$(PackagePrefix).$(AssemblyName)</PackageId>
   </PropertyGroup>
 
 </Project>

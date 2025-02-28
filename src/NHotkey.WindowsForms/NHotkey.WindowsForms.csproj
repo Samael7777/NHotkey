@@ -4,7 +4,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <PropertyGroup Label="Package properties">
-    <Description>A managed library to handle global hotkeys in Windows Forms applications. This package contains the concrete HotkeyManager implementation for Windows Forms.</Description>
+	  <PackageId>$(PackagePrefix).$(AssemblyName)</PackageId>
+	  <Description>A managed library to handle global hotkeys in Windows Forms applications. This package contains the concrete HotkeyManager implementation for Windows Forms.</Description>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\NHotkey\NHotkey.csproj" />

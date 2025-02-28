@@ -4,7 +4,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
   <PropertyGroup Label="Package properties">
-    <Description>A managed library to handle global hotkeys in WPF applications. This package contains the concrete HotkeyManager implementation for WPF.</Description>
+	  <PackageId>$(PackagePrefix).$(AssemblyName)</PackageId>
+	  <Description>A managed library to handle global hotkeys in WPF applications. This package contains the concrete HotkeyManager implementation for WPF.</Description>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\NHotkey\NHotkey.csproj" />
