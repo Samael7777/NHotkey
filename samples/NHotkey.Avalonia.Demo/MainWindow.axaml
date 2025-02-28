@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:avalonia="clr-namespace:NHotkey.Avalonia;assembly=NHotkey.Avalonia"
+        xmlns:loc="using:NHotkey.Avalonia.Demo"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        SizeToContent="WidthAndHeight"
+        x:Class="NHotkey.Avalonia.Demo.MainWindow"
+        x:DataType="loc:MainVm"
+        
+        Title="NHotkey.Avalonia.Demo">
+	<Window.KeyBindings>
+        <KeyBinding Gesture="Ctrl+Alt+N" Command="{Binding NegateCommand}"
+                    avalonia:GlobalKeyBinding.RegisterGlobalHotkey="True" />
+        <KeyBinding Gesture="Ctrl+Alt+T" Command="{Binding TestCommand}"
+                    avalonia:GlobalKeyBinding.RegisterGlobalHotkey="True" />
+    </Window.KeyBindings>
+
+    <Grid RowDefinitions="Auto,*,Auto,Auto,Auto,Auto">
+        <CheckBox Grid.Row="0" Content="Global hotkeys enabled" IsChecked="{Binding IsHotkeyManagerEnabled}" />
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Text="{Binding Value}" />
+        <TextBlock Grid.Row="2" HorizontalAlignment="Left" Text="Increment" />
+        <TextBlock Grid.Row="3" HorizontalAlignment="Left" Text="Decrement" />
+        <TextBlock Grid.Row="4" HorizontalAlignment="Left" Text="Negate" />
+        <TextBlock Grid.Row="5" HorizontalAlignment="Left" Text="Test" />
+        <TextBlock Grid.Row="2" HorizontalAlignment="Right" Text="{Binding IncrementHotkey}" />
+        <TextBlock Grid.Row="3" HorizontalAlignment="Right" Text="{Binding DecrementHotkey}" />
+        <TextBlock Grid.Row="4" HorizontalAlignment="Right" Text="Ctrl+Alt+N" />
+        <TextBlock Grid.Row="5" HorizontalAlignment="Right" Text="Ctrl+Alt+T" />
+    </Grid>
+</Window>
